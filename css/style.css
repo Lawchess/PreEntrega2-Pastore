@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+
+.logo{
+    height: 80px;
+    width:  80px;
+    padding-top: 25px;
+    position: fixed;
+    left: 2%;
+}
+
+header{
+display: grid;
+justify-items: center;
+}
+
+header {
+    background-color: #7091f5;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+}
+
+h1 {
+font-family: 'Work Sans', sans-serif;
+padding-left: 10px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 150px;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(248, 244, 244);
+    font-size: large;
+    font-style: oblique;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+/*MAIN*/
+main section {
+    height: 600px;
+    background-image: url("../multimedia/sabana\ 1.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 20px 100px 550px;
+}
+main section div p{
+    background-color: #e77c7ca9;
+    width: 300px;
+    height: 100px;
+    padding: 20px 10px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    border: 2px solid #f7b679;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px pink;
+    text-align: center;
+}
+
+main section div {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    }
+    main section aside iframe{
+        position: relative;
+        top: 250px;
+        right: 400px;
+    }
+main div img{
+    height: 500px;
+    width: 700px;
+}
+.sabanaspics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toallaspics {
+    height: 500px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.acolchadospics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*FOOTER*/
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(128, 128, 128, 0.685);
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 10%;
+    justify-content: center;
+}
+/*media queries sin terminar*/
+@media (max-width: 480px)
+{
+    header{
+        width: 100%;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+        padding-top: 50px;
+    }
+    h1 {
+        padding-right: 50%;
+    }
+    header nav ul li a {
+        display: inline;
+        justify-items: left;
+        padding-right: 100%;
+    }
+    main section div p {
+        display: flex;
+        flex-direction: column;
+    }
+}
